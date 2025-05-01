@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="pollPage.css" type="text/css">
+</head>
+<meta charset="UTF-8">
+<title>This is the poll that gathers gamer data</title>
+
+
+</head>
+<body class="background">
+	<script src="pollPage.js" type="text/javascript"></script>
+	<div id="navBar"></div>
+	
+		
+	 
+	
+	<form name="pollForm" action="poll.php" method="POST" id="pollForm">	
+		<label for="gamerTag">Gamer Tag:</label><br>
+		<input type="text" id="gamerTag" name="gamerTag" placeholder="Gamer Tag" required><br>
+		
+		<h2 style="text-align: center">Choose Games You Have Played:</h2>
+		<table style="width: 100%">
+			<tr>
+				<th><input type="checkbox" name="games[]" value="Factorio">
+					<label for="factorio">Factorio</label></th>
+				<th><input type="checkbox" name="games[]" value="Path of Exile">
+					<label for="poe1">Path of Exile</label></th>
+				<th><input type="checkbox" name="games[]" value="Path of Exile 2">
+					<label for="poe2">Path of Exile 2</label></th>
+				<th><input type="checkbox" name="games[]" value="GTFO">
+					<label for="gtfo">GTFO</label></th>
+			</tr>
+			<tr>
+				<th><input type="checkbox" name="games[]"
+					value="Minecraft"> <label for="Minecraft">Minecraft</label></th>
+				<th><input type="checkbox" name="games[]"
+					value="Valorant"> <label for="Valorant">Valorant</label></th>
+				<th><input type="checkbox" name="games[]"
+					value="Overwatch2"> <label for="Overwatch 2">Overwatch
+						2</label></th>
+				<th><input type="checkbox" name="games[]"
+					value="EldenRing"> <label for="Elden Ring">Elden
+						Ring</label></th>
+			</tr>
+			<tr>
+				<th><input type="checkbox" name="games[]"
+					value="Stellaris"> <label for="Stellaris">Stellaris</label></th>
+				<th><input type="checkbox" name="games[]"
+					value="Hades"> <label for="Hades">Hades</label></th>
+				<th><input type="checkbox" name="games[]"
+					value="Cyberpunk2077"> <label for="CyberPunk">Cyberpunk
+						2077</label></th>
+				<th><input type="checkbox" name="games[]" value="DOOM">
+					<label for="DOOM">DOOM</label></th>
+			</tr>
+			<tr>
+				<th><input type="checkbox" name="games[]" value="Halo">
+					<label for="halo">Halo</label></th>
+				<th><input type="checkbox" name="games[]"
+					value="Destiny2"> <label for="Destiny 2">Destiny 2</label></th>
+				<th><input type="checkbox" name="games[]"
+					value="ApexLegends"> <label for="Apex Legends">Apex Legends</label></th>
+				<th><input type="checkbox" name="games[]" value="PUBG">
+					<label for="pubg">PUBG</label></th>
+			</tr>
+			<tr>
+				<th><input type="checkbox" name="games[]" value="ARK">
+					<label for="Ark: Survival Evolved">ARK: Survival Evolved</label></th>
+				<th><input type="checkbox" name="games[]"
+					value="Terraria"> <label for="Terraria">Terraria</label></th>
+				<th><input type="checkbox" name="games[]" value="Rust">
+					<label for="Rust">Rust</label></th>
+				<th><input type="checkbox" name="games[]"
+					value="Fortnite"> <label for="Fortnite">Fortnite</label></th>
+			</tr>
+			<tr>
+				<th><input type="checkbox" name="games[]"
+					value="Diablo IV"> <label for="diabloIV">Diablo IV</label></th>
+				<th><input type="checkbox" name="games[]"
+					value="League Of Legends"> <label for="league">League
+						of Legends</label></th>
+				<th><input type="checkbox" name="games[]"
+					value="Warframe"> <label for="warframe">Warframe</label></th>
+				<th><input type="checkbox" name="games[]" value="GTA 5">
+					<label for="GTA5">Grand Theft Auto V</label></th>
+			</tr>
+			<tr>
+				<th><button type="submit" id="submitButton" value="Submit">Submit</button></th>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

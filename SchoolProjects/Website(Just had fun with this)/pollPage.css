@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+	border-radius: 10px;
+	padding: 10px 10px 10px 10px;
+}
+
+@media (max-width: 600px) {
+	section {
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	width: 100vw;
+	}
+	
+	header, footer {
+	width: 100%
+	}
+}
+
+ul {
+	
+	position: sticky;
+	top: 0;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #2E8B57;
+}
+
+ul li {
+	float: left;
+}
+
+ul li a {
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+}
+
+li a:hover:not(.active) {
+	background-color: #00FF7F;
+}
+
+.active {
+	background-color: #708090;
+}
+
+.background {
+	background-image: url('blackTiles.png');
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+form {
+	-webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    text-align: left;
+    border: 2px solid black;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+table, th, td {
+	background-color:darkblue;
+}
+
+th:nth-child(odd), td:nth-child(odd) {
+	background-color: black;
+	color: white;
+}
+
+th:nth-child(even), td:nth-child(even) {
+	background-color: white;
+}
+
+button {
+	size: 100%;
+}
